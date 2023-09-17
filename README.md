@@ -11,12 +11,14 @@ Instalar Composer (descargar instalador de internet)</br>
 composer --version </br>
 composer global require laravel/installer</br>
 
+
 En proyecto:</br>
 composer i </br>
 php artisan --version</br>
+Copiar archivo .env.example, quitar el .example, en la variable DB_DATABASE colocar pidefacil</br>
+(Crear base de datos con phpmyadmin en caso de usar xampp, nombre sugerido : pidefacil)</br>
 php artisan migrate:refresh --seed</br>
 
-Copiar archivo .env.example, quitar el .example, en la variable DB_DATABASE colocar pidefacil</br>
 
 Para correr la api:</br>
     php artisan serve --host {poner ipv4 acá} --port="8000"</br>
