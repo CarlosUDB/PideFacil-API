@@ -12,11 +12,14 @@ composer --version </br>
 composer global require laravel/installer</br>
 
 En proyecto:</br>
+composer i </br>
 php artisan --version</br>
 php artisan migrate:refresh --seed</br>
 
-Copiar archivo .env.example, quitar el .example, en la variable DB_DATABASE colocar pidefacil
+Copiar archivo .env.example, quitar el .example, en la variable DB_DATABASE colocar pidefacil</br>
 
+Para correr la api:</br>
+    php artisan serve --host {poner ipv4 acá} --port="8000"</br>
 
 
 ## Licencia 📄
