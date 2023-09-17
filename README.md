@@ -7,15 +7,15 @@ _DPS104 G04T_
 * **Carlos Daniel Cárcamo Pérez**
 
 ## Instalación ✒️
-*Instalar Composer (descargar instalador de internet)
-*composer --version 
-*composer global require laravel/installer
+Instalar Composer (descargar instalador de internet)</br>
+composer --version </br>
+composer global require laravel/installer</br>
 
-*En proyecto:
-*php artisan --version
-*php artisan migrate:refresh --seed
+En proyecto:</br>
+php artisan --version</br>
+php artisan migrate:refresh --seed</br>
 
-*Copiar archivo .env.example, quitar el .example, en la variable DB_DATABASE colocar pidefacil
+Copiar archivo .env.example, quitar el .example, en la variable DB_DATABASE colocar pidefacil
 
 
 
