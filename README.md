@@ -7,6 +7,7 @@ _DPS104 G04T_
 * **Carlos Daniel Cárcamo Pérez**
 
 ## Instalación ✒️
+Instalar XAMPP
 Instalar Composer (descargar instalador de internet)</br>
 composer --version </br>
 composer global require laravel/installer</br>
