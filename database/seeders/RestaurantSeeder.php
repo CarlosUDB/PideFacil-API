@@ -14,12 +14,21 @@ class RestaurantSeeder extends Seeder
      */
     public function run()
     {
-        Restaurant::firstOrCreate(
-            ['name' => 'Burger King']
-        );
+        
+        Restaurant::firstOrCreate([
+                'name' => 'Burger King',
+                'logo' => 'images/burger_king.png'
+            ]);
 
-        Restaurant::firstOrCreate(
-            ['name' => 'Subway']
-        );
+        Restaurant::firstOrCreate([
+            'name' => 'McDonalds',
+            'logo' => 'images/mcdonalds.png'
+        ]);
+
+        Restaurant::firstOrCreate([
+            'name' => 'Taco Bel',
+            'logo' => 'images/taco_bell.png'
+        ]);
+        
     }
 }
