@@ -26,7 +26,8 @@ class User extends Authenticatable
         'password',
         'address',
         'user_type',
-        'restaurant_id'
+        'restaurant_id',
+        'googleAccount',
     ];
 
     // Relations

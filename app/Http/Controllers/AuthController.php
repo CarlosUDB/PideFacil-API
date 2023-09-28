@@ -21,7 +21,8 @@ class AuthController extends Controller
             'password' => 'required|string|min:8',
             'address' => 'nullable|string|max:255',
             'user_type' => 'required|string',
-            'restaurant_id' => 'nullable|exists:restaurants,id'
+            'restaurant_id' => 'nullable|exists:restaurants,id',
+            'googleAccount' => 'nullable|string',
         ]);
 
         //in case of errors sending them
@@ -39,7 +40,8 @@ class AuthController extends Controller
             'password' => Hash::make($request->password),
             'address' => $request->address,
             'user_type' => $request->user_type,
-            'restaurant_id' => $request->restaurant_id
+            'restaurant_id' => $request->restaurant_id,
+            'googleAccount' => $request->googleAccount
         ]);
 
         //creating token
@@ -83,7 +85,8 @@ class AuthController extends Controller
             'password' => Hash::make($request->password),
             'address' => $request->address,
             'user_type' => $request->user_type,
-            'restaurant_id' => $request->restaurant_id
+            'restaurant_id' => $request->restaurant_id,
+            'googleAccount' => $request->googleAccount,
         ]);
 
         return response()->json([

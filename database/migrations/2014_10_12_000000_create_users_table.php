@@ -32,6 +32,7 @@ class CreateUsersTable extends Migration
                 ->onUpdate('cascade')
                 ->onDelete('cascade');
 
+            $table->string('googleAccount')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
